@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+body {
+    margin: 5vh 10vw;
+    overflow-x: hidden;
+}
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.consultation-button {
+    color: white;
+    background-color: black;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-flex;
+    width: max-content;
+    height: min-content;
+    white-space: nowrap;
+}
+.pink {
+    background-color: #EB7565;
+}
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 87vh;
+    justify-content: space-around;
+}
+.hero-box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-graphics {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: 364px;
+}
+.grid-graphics .graphic-design,
+.grid-graphics .ui-ux,
+.grid-graphics .app,
+.grid-graphics .photography,
+.grid-graphics .illustrations,
+.grid-graphics .motion-graphics {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: white;
+    background-position: top 20px right 20px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.grid-graphics .graphic-design {
+    background-image: url("assets/pattern-graphic-design.svg");
+    background-color: #755CDE;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-graphics .ui-ux {
+    background-image: url("assets/pattern-ui-ux.svg");
+    background-color: #F6A560;
+}
+.grid-graphics .app {
+    background-image: url("assets/pattern-apps.svg");
+    background-color: #F39E9E;
+}
+.grid-graphics .photography {
+    background-image: url("assets/pattern-photography.svg");
+    background-color: #61C4B7;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.grid-graphics .illustrations {
+    background-image: url("assets/pattern-illustrations.svg");
+    background-color: #EB7565;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.grid-graphics .motion-graphics {
+    background-image: url("assets/pattern-motion-graphics.svg");
+    background-color: #552049;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.grid-graphics section p {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+
+.profile {
+    display: flex;
+    height: 445px;
+    align-items: center;
+    gap: 10vw;
+}
+.profile .profile-picture img {
+    height: 445px;
+    width: auto;
+}
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.img-carousel {
+    display: flex;
+    overflow: auto;
+    width: 100vw;
+    margin-left: -10vw;
+    gap: 25px;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+.img-carousel div img {
+    border-radius: 10px;
+}
+.slide1 {
+    margin-left: 25px;
+}
+.slide5 {
+    margin-right: 25px;
+}
+.carousel h2 {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.arrow-left, .arrow-right {
+    background-color: black;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultation {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.consultation > * {
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+.consultation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
